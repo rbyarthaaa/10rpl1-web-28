@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #0f0f0f;
+  text-align: left;
+  padding: 8px;
+}
+th {
+  background-color: #eb8aca
+}
+th:nth-child(even) {
+  background-color: #eb8aca;
+}
+
+.Status {
+    background-color: rgb(186, 188, 189);
+}
+
+h2 {
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<h2>Data Biodata Siswa PPLG</h2>
+
+<table>
+  <tr>
+    <th>Field/Atribut</th>
+    <th>Keterangan/Hasil Input</th>
+  </tr>
+  <tr>
+    <td>Nama:</td>
+    <td>Riby Arta Dinata</td>
+  </tr>
+  <tr>
+    <td>Alamat:</td>
+    <td>Maguan ngajum</td>
+  </tr>
+  <tr>
+    <td>Jurusan:</td>
+    <td>RPL</td>
+  </tr>
+  <tr>
+    <td>Jenis Kelamin:</td>
+    <td>Perempuan</td>
+  </tr>
+  <tr>
+    <td>Tinggi Badan (cm)</td>
+    <td>157 cm</td>
+  </tr>
+  <tr>
+    <td>Berat Badan (kg):</td>
+    <td>40 kg</td>
+  </tr>
+  <tr>
+    <td>Hobi:</td>
+    <td>Membaca novel</td>
+  </tr>
+  <tr>
+    <td>No. Hp:</td>
+    <td>085854614006</td>
+  </tr>
+  <tr>
+    <th colspan="2" class="Status"> Status: Data berhasil divalidasi dan direkap ke dalam tabel</th>
+  </tr>
+</table>
+    
+</body>
+</html>
+
+
+<hr>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.merah {
+  border: 4px solid red !important;
+  background-color: FloralWhite;
+}
+
+.merah-span {
+  color: red;
+}
+
+.split-cell {
+  border: 5px dashed green;
+  padding: 15px;
+  background-color: #dff5df;
+}
+
+.split-cell h2 {
+  color: green;
+}
+
+.split-cell table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.split-cell table td {
+  border: 2px solid green;
+  padding: 10px;
+  font-size: 16px;
+  background-color: white;
+}
+
+td, th {
+  border: 1px solid #0f0f0f;
+  text-align: left;
+  padding: 8px;
+}
+th {
+  background-color: #eb8aca
+}
+th:nth-child(even) {
+  background-color: #eb8aca;
+}
+
+.Status {
+    background-color: rgb(186, 188, 189);
+}
+
+h2 {
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<h2>Margin & Split</h2>
+
+<table>
+  <tr>
+    <th>Kategori Data</th>
+    <th>Atribut Form</th>
+    <th>Hasil Islan Siswa</th>
+  </tr>
+  <tr>
+    <td rowspan="3" class="merah"> IDENTITAS PRIBADI<br>
+    <span class="merah-span">(Marged 3 Baris)</span>
+    </td>
+    <td>Nama:</td>
+    <td>Riby Arta Dinata</td>
+  </tr>
+  <tr>
+    <td>Alamat:</td>
+    <td>Maguan ngajum</td>
+  </tr>
+  <tr>
+    <td>No. Hp:</td>
+    <td>085854614006</td>
+  </tr>
+  <tr>
+    <td>Akademik</td>
+    <td>Jurusan:</td>
+    <td>RPL</td>
+  </tr>
+  <tr>
+    <td>Preferensi</td>
+    <td>Jenis Kelamin:</td>
+    <td>Perempuan</td>
+  </tr>
+  <tr>
+    <td>Data Fisik</td>
+    <td>Pengukuran Badan:</td>
+    <td>
+     <div class="split-cell">
+       <h3> SPLIT CELL (Dipecah):</h3>
+     
+      <table>
+        <tr>
+          <td> Tinggi: 157cm</td>
+        </tr>
+        <tr>
+        <td> Berat: 40kg</td>
+        </tr>
+      </table>
+     </div>
+    </td>
+  </tr>
+  <tr>
+    <td>Lain lain</td>
+    <td>Hobi:</td>
+    <td>Membaca novel</td>
+  </tr>
+  <tr>
+    <th colspan="3" class="Status"> Garis Merah: Area Marge Cell | Garis Hijau= Area Split Cell</th>
+  </tr>
+</table>
+    
+</body>
+</html>
+
+<hr>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.merah {
+  border: 4px solid red !important;
+  background-color: FloralWhite;
+}
+
+.merah-span {
+  color: red;
+}
+
+span {
+  color: red;
+}
+
+.split-cell {
+  border: 5px dashed green;
+  padding: 15px;
+  background-color: #dff5df;
+}
+
+.split-cell h2 {
+  color: green;
+}
+
+.split-cell table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.split-cell table td {
+  border: 2px solid green;
+  padding: 10px;
+  font-size: 16px;
+  background-color: white;
+}
+
+.Kontak {
+  border: 4px solid red !important;
+  background-color: Floralwhite;
+}
+
+td, th {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #eb8aca
+}
+
+th:nth-child(even) {
+  background-color: #eb8aca;
+}
+
+.Status {
+    background-color: rgb(255, 255, 255);
+}
+
+h2 {
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<h2>Tantangan Tabel kompleks => Marge (Merah) & Split (Hijau)</h2>
+
+<table>
+  <tr>
+    <th>Kategori Utama</th>
+    <th>Sub Kategori</th>
+    <th>Atribut Island</th>
+    <th>Detail Data / Nilai</th>
+  </tr>
+  <tr>
+    <td rowspan="3" class="merah"> DATA SISWA <br> 
+    <span>(Rowspan 3)</span>
+    </td>
+    <td rowspan="2">Identitas Utama</td>
+    <td>Nama Lengkap</td>
+    <td>Riby Arta Dinata</td>
+  </tr>
+  <tr>
+    <td>Alamat Rumah</td>
+    <td>Maguan ngajum</td>
+  </tr>
+  <tr>
+    <th colspan="2" class="Kontak">Kontak Aktif: 085854614006<br> 
+    <span>(Colspan 2)</span>
+    </th>
+    <td>Hobi: Membaca Novel</td>
+  </tr>
+  <tr>
+    <td>Akademik</td>
+    <td>Jurusan PPLG</td>
+    <td>Pilihan Kelas</td>
+    <td>RPL (Rekayasa Perangkat Lunak)</td>
+  </tr>
+  <tr>
+    <td>Preferensi</td>
+    <td>Gender</td>
+    <td>Jenis Kelamin</td>
+    <td>Perempuan</td>
+  </tr>
+  <tr>
+    <td>Antropometri</td>
+    <td>Pengukuran Fisik
+    <td>Parameter Badan</td>
+    </td>
+    <td>
+     <div class="split-cell">
+      <h3> SPLIT CELL (Dipecah jadi 2 sub-sel):</h3>
+    
+      <table>
+        <tr>
+          <td>Tinggi Badan: 157cm</td>
+        </tr>
+        <tr>
+          <td>Berat Badan: 40kg</td>
+        </tr>
+      </table>
+     </div>
+    </td>
+  </tr>
+  <tr>
+    <th colspan="4" class="Status"> Keterangan: Kotak Merah adalah hasil **Merge Cell**, sedangkan kotak bergaris Hijau adalah simulasi **Split Cell**.</th>
+  </tr>
+</table>
+    
+</body>
+</html>
