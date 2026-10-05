@@ -87,7 +87,7 @@
 
         /* Gaya untuk setiap tombol menu */
         .menu-item {
-            background-color: #1a1e24; /* Warna abu-abu gelap */
+            background-color: #fcb3e5; /* Warna abu-abu gelap */
             color: #ffffff;
             text-decoration: none;
             padding: 14px;
@@ -97,8 +97,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 1.5px solid #fecdd3; /* Garis tepi tipis */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            border: 1.5px solid #f5156b; /* Garis tepi tipis */
+            box-shadow: 0 4px 6px rgba(239, 184, 215, 0.3);
             transition: all 0.2s ease-in-out;
         }
 
